@@ -1,0 +1,12 @@
+apply plugin: "java"
+apply plugin: 'com.huawei.agconnect'
+
+sourceCompatibility = 1.7
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+sourceSets.main.java.srcDirs = [ "src/" ]
+
+eclipse.project.name = appName + "-core"
+dependencies{
+    implementation 'com.huawei.hms:ads-lite:13.4.30.301'
+}
